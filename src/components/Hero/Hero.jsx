@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiArrowDown } from 'react-icons/fi'
 import { HiOutlineDownload } from 'react-icons/hi'
-import cvPT from '../../assets/IUMY PIMENTEL - PTBR.pdf'
-import cvEN from '../../assets/IUMY PIMENTEL - EN.pdf'
+import cvPT from '../../assets/IUMY PIMENTEL - V1 - PTBR.pdf'
+import cvEN from '../../assets/IUMY PIMENTEL - V1 - EN.pdf'
 
 function ParticleCanvas() {
   const canvasRef = useRef(null)
