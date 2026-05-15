@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  body {
+    background-color: #100810;
+    color: #FFCCE0;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #100810; }
+  ::-webkit-scrollbar-thumb { background: #FF5DA8; border-radius: 2px; }
+}
+
+@layer components {
+  .glass {
+    background: rgba(58, 22, 44, 0.28);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 93, 168, 0.15);
+  }
+
+  .glass-dark {
+    background: rgba(16, 8, 16, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 93, 168, 0.12);
+  }
+
+  .neon-text {
+    color: #FF5DA8;
+    text-shadow: 0 0 20px #FF5DA880, 0 0 40px #FF5DA840;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #FFCCE0 0%, #FF5DA8 50%, #E883B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shimmer-border {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .shimmer-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #FF5DA8, #E883B5, #FF9EC4, #FF5DA8);
+    background-size: 300% 100%;
+    animation: shimmer 3s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-full font-body font-medium text-sm transition-all duration-300;
+    background: linear-gradient(135deg, #FF5DA8, #E883B5);
+    color: white;
+    box-shadow: 0 0 24px #FF5DA850;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 36px #FF5DA880, 0 0 70px #FF5DA840;
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-full font-body font-medium text-sm transition-all duration-300;
+    border: 1px solid rgba(255, 93, 168, 0.4);
+    color: #FFCCE0;
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    border-color: #FF5DA8;
+    background: rgba(255, 93, 168, 0.1);
+    box-shadow: 0 0 20px #FF5DA840;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-semibold mb-2;
+  }
+
+  .section-subtitle {
+    @apply font-body text-textsecond text-base mb-12;
+  }
+}
+
+/* Petals background */
+.petals-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -24px;
+  opacity: 0;
+  animation: petal-fall var(--duration) linear infinite var(--delay);
+  will-change: transform, opacity;
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-24px) translateX(0) rotate(var(--rot)) scale(1);
+    opacity: 0;
+  }
+  8% {
+    opacity: var(--opacity, 0.3);
+  }
+  30% {
+    transform: translateY(30vh) translateX(calc(var(--sway) * 0.6)) rotate(calc(var(--rot) + 110deg)) scale(0.95);
+  }
+  55% {
+    transform: translateY(55vh) translateX(var(--sway)) rotate(calc(var(--rot) + 220deg)) scale(1.02);
+  }
+  80% {
+    transform: translateY(80vh) translateX(calc(var(--sway) * 0.3)) rotate(calc(var(--rot) + 310deg)) scale(0.97);
+    opacity: var(--opacity, 0.3);
+  }
+  100% {
+    transform: translateY(108vh) translateX(0) rotate(calc(var(--rot) + 380deg)) scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FF5DA8, #FFB7D5, #FF5DA8);
+  box-shadow: 0 0 10px #FF5DA8;
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* Particle canvas */
+#particle-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}

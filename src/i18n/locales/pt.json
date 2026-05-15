@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "education": "Formação",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Iumy Pimentel",
+    "role": "Estudante de Engenharia de Software · DEV Full Stack",
+    "description": "Construo aplicações com React e Django, com formatura em Engenharia de Software em 2026. Apaixonada por código limpo, interfaces bonitas e sistemas que realmente funcionam.",
+    "cta_projects": "Ver Projetos",
+    "cta_contact": "Entrar em Contato",
+    "cta_cv_pt": "CV em Português",
+    "cta_cv_en": "CV in English",
+    "scroll": "Role para baixo"
+  },
+  "about": {
+    "tag": "Sobre Mim",
+    "title": "Código com propósito,\ndesign com intenção.",
+    "p1": "Sou técnico em informática e graduado em engenharia de software. Atualmente estou estagiando como desenvolvedor Full Stack, trabalhando com Django no backend e React no frontend.",
+    "p2": "Meu foco está em arquitetura de software, clean code e APIs REST robustas. Acredito que um bom código não é apenas funcional: é legível, testável e fácil de evoluir.",
+    "p3": "Tenho experiência com projetos reais envolvendo segurança de aplicações, modelagem de dados, documentação técnica e integração de sistemas. Sempre com atenção à experiência do usuário.",
+    "highlights": [
+      "Arquitetura orientada a domínio",
+      "APIs REST com documentação",
+      "Segurança de aplicações",
+      "Clean Code & Refatoração",
+      "UX/UI centrado no usuário",
+      "Modelagem de banco de dados"
+    ]
+  },
+  "skills": {
+    "tag": "Habilidades",
+    "title": "Stack técnico",
+    "subtitle": "Ferramentas e tecnologias que uso para construir soluções completas.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Banco de Dados",
+      "tools": "Ferramentas",
+      "architecture": "Arquitetura & Práticas",
+      "security": "Segurança"
+    }
+  },
+  "projects": {
+    "tag": "Projetos",
+    "title": "Trabalho real,\nproblemas reais.",
+    "subtitle": "Cada projeto representa um problema resolvido com raciocínio técnico e atenção à arquitetura.",
+    "view_github": "Ver no GitHub",
+    "private": "Projeto Privado",
+    "status": {
+      "completed": "Concluído",
+      "in_progress": "Em desenvolvimento",
+      "academic": "Acadêmico"
+    },
+    "close": "Fechar",
+    "problem": "Problema",
+    "challenge": "Desafio técnico",
+    "solution": "Solução",
+    "participation": "Minha participação"
+  },
+  "education": {
+    "tag": "Formação",
+    "title": "Trajetória acadêmica",
+    "subtitle": "Do técnico em informática à engenharia de software — aprendizado contínuo e aplicado.",
+    "concluded": "Concluído",
+    "inProgress": "Cursando",
+    "certs_title": "Conhecimentos complementares",
+    "certsPending": "+ certificações em andamento",
+    "certs": [
+      "Desenvolvimento Web Full Stack",
+      "Arquitetura de APIs RESTful",
+      "Segurança em Aplicações Web",
+      "Banco de Dados Relacionais e SQL",
+      "Controle de Versão com Git & GitHub",
+      "Metodologias Ágeis (Scrum/Kanban)",
+      "Containerização com Docker",
+      "React Native — Desenvolvimento Mobile",
+      "Visão Computacional e Machine Learning"
+    ]
+  },
+  "experience": {
+    "tag": "Diferenciais",
+    "title": "O que eu trago\nao time.",
+    "items": [
+      { "title": "APIs & Integração", "desc": "Design e implementação de APIs REST com autenticação, documentação e boas práticas de versionamento." },
+      { "title": "Arquitetura de Software", "desc": "Modelagem de sistemas com separação de responsabilidades, padrões de projeto e foco em manutenibilidade." },
+      { "title": "Segurança de Aplicações", "desc": "Implementação de práticas seguras: autenticação JWT, controle de acesso, proteção contra vulnerabilidades comuns." },
+      { "title": "Clean Code", "desc": "Código legível, bem nomeado, sem duplicações — desenvolvido para ser mantido e evoluído por equipes." },
+      { "title": "Full Stack Real", "desc": "Experiência integrada de frontend (React) a backend (Django) passando pelo banco de dados — sem gaps na stack." },
+      { "title": "Documentação Técnica", "desc": "Criação de artefatos, diagramas UML, especificações e documentação que o time realmente usa." }
+    ]
+  },
+  "contact": {
+    "tag": "Contato",
+    "title": "Vamos construir\nalgo juntos?",
+    "subtitle": "Aberta a oportunidades, colaborações e conversas sobre tecnologia.",
+    "name": "Seu nome",
+    "email": "Seu e-mail",
+    "message": "Sua mensagem",
+    "send": "Enviar mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada! Responderei em breve.",
+    "or": "ou entre em contato diretamente"
+  }
+}

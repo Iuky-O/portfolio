@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Iumy Pimentel",
+    "role": "Software Engineering Student · Full Stack Dev",
+    "description": "I build applications with React and Django, graduating in Software Engineering in 2026. Passionate about clean code, beautiful interfaces, and systems that truly work.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in Touch",
+    "cta_cv_pt": "CV em Português",
+    "cta_cv_en": "CV in English",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "tag": "About Me",
+    "title": "Code with purpose,\ndesign with intention.",
+    "p1": "I am a computer technician and have a degree in software engineering. I am currently interning as a Full Stack developer, working with Django on the backend and React on the frontend.",
+    "p2": "My focus is on software architecture, clean code, and robust REST APIs. I believe good code isn't just functional: it's readable, testable, and easy to evolve.",
+    "p3": "I have experience with real projects involving application security, data modeling, technical documentation, and system integration. Always with attention to user experience.",
+    "highlights": [
+      "Domain-driven architecture",
+      "REST APIs with documentation",
+      "Application security",
+      "Clean Code & Refactoring",
+      "User-centered UX/UI",
+      "Database modeling"
+    ]
+  },
+  "skills": {
+    "tag": "Skills",
+    "title": "Technical stack",
+    "subtitle": "Tools and technologies I use to build complete solutions.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools",
+      "architecture": "Architecture & Practices",
+      "security": "Security"
+    }
+  },
+  "projects": {
+    "tag": "Projects",
+    "title": "Real work,\nreal problems.",
+    "subtitle": "Each project represents a problem solved with technical reasoning and architectural attention.",
+    "view_github": "View on GitHub",
+    "private": "Private Project",
+    "status": {
+      "completed": "Completed",
+      "in_progress": "In progress",
+      "academic": "Academic"
+    },
+    "close": "Close",
+    "problem": "Problem",
+    "challenge": "Technical challenge",
+    "solution": "Solution",
+    "participation": "My role"
+  },
+  "education": {
+    "tag": "Education",
+    "title": "Academic journey",
+    "subtitle": "From technical IT degree to software engineering — continuous, applied learning.",
+    "concluded": "Completed",
+    "inProgress": "In progress",
+    "certs_title": "Additional knowledge",
+    "certsPending": "+ certifications in progress",
+    "certs": [
+      "Full Stack Web Development",
+      "RESTful API Architecture",
+      "Web Application Security",
+      "Relational Databases and SQL",
+      "Version Control with Git & GitHub",
+      "Agile Methodologies (Scrum/Kanban)",
+      "Containerization with Docker",
+      "React Native — Mobile Development",
+      "Computer Vision and Machine Learning"
+    ]
+  },
+  "experience": {
+    "tag": "Differentials",
+    "title": "What I bring\nto the team.",
+    "items": [
+      { "title": "APIs & Integration", "desc": "Design and implementation of REST APIs with authentication, documentation, and versioning best practices." },
+      { "title": "Software Architecture", "desc": "System modeling with separation of concerns, design patterns, and focus on maintainability." },
+      { "title": "Application Security", "desc": "Implementing secure practices: JWT authentication, access control, protection against common vulnerabilities." },
+      { "title": "Clean Code", "desc": "Readable, well-named code without duplication — developed to be maintained and evolved by teams." },
+      { "title": "Real Full Stack", "desc": "Integrated experience from frontend (React) to backend (Django) through the database — no gaps in the stack." },
+      { "title": "Technical Documentation", "desc": "Creating artifacts, UML diagrams, specifications, and documentation that the team actually uses." }
+    ]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Let's build\nsomething together?",
+    "subtitle": "Open to opportunities, collaborations, and conversations about technology.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll reply soon.",
+    "or": "or reach out directly"
+  }
+}
